@@ -1,0 +1,14 @@
+
+
+<suite name="Suite">
+<listeners>
+
+<listener class-name="utils.SuiteListener"></listener>
+</listeners>
+  <test thread-count="5" name="Test">
+  <parameter name="browser" value="chrome"></parameter>
+    <classes>
+      <class name="qa.tests.LoginTestCase1"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
