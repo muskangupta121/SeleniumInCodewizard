@@ -16,7 +16,7 @@ public class LoginPageEvents {
 		{
 			ele.getWebElement("ID", LoginPageElements.username).sendKeys("muskan@replicacia.com");
 			ele.getWebElement("ID", LoginPageElements.password).sendKeys("Mus@1234");
-			
+			ele.getWebElement("XPATH", LoginPageElements.logintext).click();
 		}
 		
 }

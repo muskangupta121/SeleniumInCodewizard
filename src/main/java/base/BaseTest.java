@@ -39,10 +39,10 @@ public class BaseTest {
 		extent = new ExtentReports();
 		extent.attachReporter(sparkReporter);
 		sparkReporter.config().setTheme(Theme.DARK);
-		extent.setSystemInfo("HostName", "RHELB");;
+		extent.setSystemInfo("HostName", "Muskan");;
 		extent.setSystemInfo("UserName", "root");
 		sparkReporter.config().setDocumentTitle("Automation Report");
-		sparkReporter.config().setReportName("Automation Tests Results");
+		sparkReporter.config().setReportName("CodeWizard Automation Tests Results");
 	}
 
 	@BeforeMethod
@@ -66,7 +66,7 @@ public class BaseTest {
 			logger.log(Status.SKIP, MarkupHelper.createLabel(result.getName() + " - Test Case Skipped", ExtentColor.ORANGE)); }
 		else if(result.getStatus() == ITestResult.SUCCESS) {
 			logger.log(Status.PASS, MarkupHelper.createLabel(result.getName() + " - Test Case Pass", ExtentColor.GREEN)); }
-		driver.quit();
+		//driver.quit();
 	}
 
 	@AfterTest
