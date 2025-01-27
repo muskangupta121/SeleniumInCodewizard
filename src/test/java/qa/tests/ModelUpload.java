@@ -1,25 +1,28 @@
 package qa.tests;
 
+import java.awt.AWTException;
+
 import org.testng.annotations.Test;
 
 import base.BaseTest;
 import pageEvents.GetStartedEvents;
 import pageEvents.LoginPageEvents;
-import pageEvents.SignupPageEvents;
+import pageEvents.modelLibEvents;
 import utils.ElementFetch;
 
-public class LoginTestCase1 extends BaseTest{
+public class ModelUpload extends BaseTest{
 	
 	ElementFetch ele = new ElementFetch();
 	GetStartedEvents getStartedPage = new GetStartedEvents();
 	LoginPageEvents loginPage = new LoginPageEvents();
-	
+	modelLibEvents modelUpload = new modelLibEvents();
 	
 	@Test
-  public void EnterCreds() {
+  public void ModelLib() throws AWTException, InterruptedException {
 		getStartedPage.getStartedBtn();
-		loginPage.verifyIfLoginPageLoaded();
 		loginPage.enterCredentials();
+		modelUpload.uploadModel();
+		modelUpload.verifyModelSaved();
 		
   }
 }

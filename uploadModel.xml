@@ -1,0 +1,16 @@
+
+
+<suite name="Suite">
+<listeners>
+
+<listener class-name="utils.SuiteListener"></listener>
+</listeners>
+  <test thread-count="5" name="Test">
+  <parameter name="browser" value="chrome"></parameter>
+    <classes>
+      <class name="qa.tests.ModelUpload"/>
+      <class name="qa.tests.ExistingBeApp"/>
+      <class name="qa.tests.BeModelUpload"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

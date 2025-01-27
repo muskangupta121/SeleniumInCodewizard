@@ -7,15 +7,24 @@
   <test thread-count="5" name="Test(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="qa.tests.LoginTestCase1">
+      <class name="qa.tests.ExistingBeApp">
         <methods>
           <include name="beforeTestMethod"/>
           <include name="afterMethod"/>
+          <include name="afterTest"/>
+          <include name="beforeMethodMethod"/>
           <include name="EnterCreds"/>
+        </methods>
+      </class> <!-- qa.tests.ExistingBeApp -->
+      <class name="qa.tests.BeModelUpload">
+        <methods>
+          <include name="beforeTestMethod"/>
+          <include name="afterMethod"/>
+          <include name="ModelUploadBe"/>
           <include name="afterTest"/>
           <include name="beforeMethodMethod"/>
         </methods>
-      </class> <!-- qa.tests.LoginTestCase1 -->
+      </class> <!-- qa.tests.BeModelUpload -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

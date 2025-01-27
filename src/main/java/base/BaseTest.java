@@ -67,6 +67,7 @@ public class BaseTest {
 		else if(result.getStatus() == ITestResult.SUCCESS) {
 			logger.log(Status.PASS, MarkupHelper.createLabel(result.getName() + " - Test Case Pass", ExtentColor.GREEN)); }
 		//driver.quit();
+		
 	}
 
 	@AfterTest
