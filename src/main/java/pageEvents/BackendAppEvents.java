@@ -45,9 +45,6 @@ public class BackendAppEvents extends BaseTest{
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         WebElement dropdown = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(".css-5wzqtd-singleValue")));
         dropdown.click();
-        
-        //dropdown.sendKeys("HealthCare");
-        
 
         Thread.sleep(3000); 
 		

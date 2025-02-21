@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="qa.tests.LoginTestCase1">
+      <class name="qa.tests.ExistingBeApp">
         <methods>
           <include name="beforeTestMethod"/>
           <include name="afterMethod"/>
-          <include name="EnterCreds"/>
           <include name="afterTest"/>
           <include name="beforeMethodMethod"/>
+          <include name="EnterCreds"/>
         </methods>
-      </class> <!-- qa.tests.LoginTestCase1 -->
+      </class> <!-- qa.tests.ExistingBeApp -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

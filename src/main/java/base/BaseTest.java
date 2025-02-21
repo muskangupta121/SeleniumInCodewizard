@@ -39,7 +39,7 @@ public class BaseTest {
 		extent = new ExtentReports();
 		extent.attachReporter(sparkReporter);
 		sparkReporter.config().setTheme(Theme.DARK);
-		extent.setSystemInfo("HostName", "Muskan");;
+		extent.setSystemInfo("HostName", "Muskan");
 		extent.setSystemInfo("UserName", "root");
 		sparkReporter.config().setDocumentTitle("Automation Report");
 		sparkReporter.config().setReportName("CodeWizard Automation Tests Results");

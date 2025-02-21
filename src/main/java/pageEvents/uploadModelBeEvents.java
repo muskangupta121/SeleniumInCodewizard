@@ -2,6 +2,7 @@ package pageEvents;
 
 import java.io.IOException;
 import java.time.Duration;
+import java.util.Random;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -23,7 +24,9 @@ public class uploadModelBeEvents extends BaseTest{
 	@SuppressWarnings("deprecation")
 	public void uploadModel() throws InterruptedException, IOException {
 		ele.getWebElement("XPATH", uploadModelBeElements.newbe).click();
-		ele.getWebElement("NAME", uploadModelBeElements.projectName).sendKeys("BackendTestApp");
+		Random ran = new Random();
+		String appName = "TestApp" + ran.nextInt(100);
+		ele.getWebElement("NAME", uploadModelBeElements.projectName).sendKeys(appName);
 		ele.getWebElement("XPATH", uploadModelBeElements.createBtn).click();
 		ele.getWebElement("XPATH", uploadModelBeElements.designTab).click();
 		ele.getWebElement("XPATH", uploadModelBeElements.uploadBtn).click();

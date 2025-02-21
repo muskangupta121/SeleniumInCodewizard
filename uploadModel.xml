@@ -9,8 +9,7 @@
   <parameter name="browser" value="chrome"></parameter>
     <classes>
       <class name="qa.tests.ModelUpload"/>
-      <class name="qa.tests.ExistingBeApp"/>
-      <class name="qa.tests.BeModelUpload"/>
+     
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -7,5 +7,5 @@ public interface uploadModelBeElements {
 	String createBtn = "//button[text()='Create']";
 	String designTab = "//button[text()='Upload Design']";
 	String uploadBtn = "//span[text()='Browse From Your Device']";
-	String fileLocation = "D:\\Downloads\\hritikdocs\\FileUpload.exe";
+	String fileLocation = "D:\\Lenovo\\model_library\\mdj\\team-collaboration.mdj";
 }
